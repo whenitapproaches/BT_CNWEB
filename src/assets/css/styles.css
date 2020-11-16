@@ -1,0 +1,178 @@
+:root {
+  --black-color: #3C3C3C;
+  --white-color: #F5F5F5;
+  --primary-color: #44BBA4;
+  --success-color: #4FB477;
+  --info-color: #00A5CF;
+  --warning-color: #E6AF2E;
+  --danger-color: #F93943;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  width: 100%;
+  color: var(--black-color);
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color: var(--white-color);
+  padding: 2rem 4rem;
+  box-shadow: 0 5px 1rem rgba(30, 30, 30, 0.25);
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar .navbar-right {
+  display: flex;
+}
+
+.navbar .navbar-right .user {
+  padding-left: 2rem;
+  
+}
+
+.navbar .navbar-right .user {
+  padding-left: 2rem;
+  position: relative;
+}
+
+.navbar .navbar-right .user .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--white-color);
+  box-shadow: 0 5px 1rem rgba(30, 30, 30, 0.25);
+  padding: 1rem 2rem;
+  min-width: 100px;
+}
+
+.navbar .navbar-right .user .username:hover .dropdown {
+  display: flex;
+
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--white-color);
+  box-shadow: 0 5px 1rem rgba(30, 30, 30, 0.25);
+  padding: 1rem 2rem;
+  min-width: 100px;
+}
+
+
+.has-dropdown:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar .navbar-right ul.menu {
+  display: flex;
+
+
+
+}
+
+.navbar .navbar-right .menu li.item {
+  padding: 0 1rem;
+  
+}
+
+.menu li.item .link {
+  text-decoration: none;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.menu li.item .link:hover {
+  color: var(--primary-color);
+}
+
+.menu li.item .link.is-active {
+  color: var(--primary-color);
+}
+
+.menu li.item:last-child {
+  padding-right: 0;
+  
+}
+
+.navbar .navbar-left .logo {
+  
+}
+
+
+.dropdown .item {
+  padding: 0.5rem 0 !important;
+}
+
+.dropdown .item:first-child {
+  padding-top: 0;
+}
+.dropdown .item:last-child {
+  padding-bottom: 0;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button.is-info {
+  background-color: var(--info-color);
+}
+
+.button.is-primary {
+  background-color: var(--primary-color);
+}
+
+.button.is-danger {
+  background-color: var(--danger-color);
+}
+
+.employees-search-form {
+  padding: 2rem 0;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+}
+
+.form-group {
+
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.form-group input {
+  margin-bottom: 0.75rem;
+  display: flex;
+}

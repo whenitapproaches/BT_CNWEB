@@ -1,0 +1,18 @@
+table {}
+
+table td {
+  padding: 1rem;
+}
+
+table tr {
+  border-bottom: 1px solid var(--black-color);
+}
+
+table th {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.employees-table {
+  overflow-x: auto;
+}
